@@ -9,24 +9,24 @@
     <meta name="description" content="Gaurav Garje's Portfolio Website">
     <meta name="author" content="GAURAV GARJE">
 
+    <title>PORTFOLIO-Gaurav Garje</title>
+    
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CORE UI ICONS -->
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/UltimatePortfolioWebsite/Images/nameFavicon.ico">
+    <link rel="shortcut icon" href="/UltimatePortfolioWebsite/Images/nameFavicon.ico" type="image/x-icon">
+    <link rel="icon" href="/UltimatePortfolioWebsite/Images/nameFavicon.ico" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/UltimatePortfolioWebsite/Css/styles.css">
 
-    <!-- <style>
-        hr {
-            background-color: black;
-        }
-    </style> -->
-    
-    <title>PORTFOLIO-Gaurav Garje</title>
+
+    <!-- MAIN JS -->
+    <script src="/UltimatePortfolioWebsite/Javascript/main.js"></script>
+
 </head>
 
 <body>
@@ -49,38 +49,48 @@
     <!-- #################### HEADER (start) #################### -->
     <header class="header" id="header">
         <nav class="nav container">
-        <img src="/UltimatePortfolioWebsite/Images/myLogo.png" alt="" class="my_logo">
-        <a href="#home" class="nav_logo">Gaurav Garje</a>
-        
-        <div class="nav_menu" id="nav-menu">
+            <img src="/UltimatePortfolioWebsite/Images/myLogo.png" title="Logo" class="my_logo">
+            <a href="#home" title="Name" class="nav_logo">Gaurav Garje</a>
+
+            <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
+                        <a href="#home" class="nav_link active-link" onclick="activateTab(this)">
                             <i class="uil uil-estate nav_icon"></i>HOME
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class="uil uil-user-square nav_icon"></i>ABOUT
+                        <a href="#about" class="nav_link" onclick="activateTab(this)">
+                            <i class="uil uil-user-square nav_icon"></i>ABOUT ME
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#skills" class="nav_link">
+                        <a href="#" class="nav_link" onclick="activateTab(this)">
+                            <i class="uil uil-file-check-alt nav_icon"></i>EXPERIENCE
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link" onclick="activateTab(this)">
+                            <i class="uil uil-file-check-alt nav_icon"></i>EDUCATION
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link" onclick="activateTab(this)">
                             <i class="uil uil-file-check-alt nav_icon"></i>SKILLS
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#services" class="nav_link">
-                            <i class="uil uil-bag-alt nav_icon"></i>SERVICES
+                        <a href="#" class="nav_link" onclick="activateTab(this)">
+                            <i class="uil uil-image nav_icon"></i>ACHIEVEMENTS
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="https://sites.google.com/view/gaurav-garje-portfolio-courses/home" class="nav_link">
-                            <i class="uil uil-image nav_icon"></i>COURSES
+                        <a href="#services" class="nav_link" onclick="activateTab(this)">
+                            <i class="uil uil-bag-alt nav_icon"></i>PROJECTS
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#contact" class="nav_link">
+                        <a href="#contact" class="nav_link" onclick="activateTab(this)">
                             <i class="uil uil-envelope nav_icon"></i>CONTACT ME
                         </a>
                     </li>
@@ -107,18 +117,19 @@
             <div class="home_container container grid">
                 <div class="home_content grid">
                     <div class="home_social">
-                        <a href="https://www.linkedin.com/in/garje-gaurav2000/" target="_blank" class="home_social-icon">
+                        <a href="https://www.linkedin.com/in/garje-gaurav2000/" target="_blank"
+                            class="home_social-icon">
                             <i class="uil uil-linkedin" title="Linkedin"></i>
                         </a>
 
                         <a href="https://www.hackerrank.com/FalconEyedAlaric" target="_blank" class="home_social-icon">
                             <i class="cib-hackerrank" title="Hackerrank"></i>
                         </a>
-                        
+
                         <a href="https://www.kaggle.com/gauravgarje" target="_blank" class="home_social-icon">
-                            <i class="cib-kaggle" title="Kaggle"></i> 
+                            <i class="cib-kaggle" title="Kaggle"></i>
                         </a>
-                        
+
                         <a href="https://leetcode.com/Gaurav_Garje/" target="_blank" class="home_social-icon">
                             <i class="cib-leetcode" title="LeetCode"></i>
                         </a>
@@ -126,8 +137,9 @@
                         <a href="https://github.com/Gauravgarje" target="_blank" class="home_social-icon">
                             <i class="uil uil-github" title="Github"></i>
                         </a>
-                        
-                        <a href="https://auth.geeksforgeeks.org/user/gauravgarje2000/profile" target="_blank" class="home_social-icon">
+
+                        <a href="https://auth.geeksforgeeks.org/user/gauravgarje2000/profile" target="_blank"
+                            class="home_social-icon">
                             <i class="cib-justgiving" title="Geeks for Geeks"></i>
                         </a>
                     </div>
@@ -145,7 +157,8 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home_blob-img" x='30' y='-20' xlink:href="/UltimatePortfolioWebsite/Images/main_pic.png" />
+                                <image class="home_blob-img" x='30' y='-20'
+                                    xlink:href="/UltimatePortfolioWebsite/Images/main_pic.png" />
                             </g>
                         </svg>
                     </div>
@@ -153,7 +166,8 @@
                     <div class="home_data">
                         <h1 class="home_title">Hi, I am Gaurav Garje</h1>
                         <h3 class="home_subtitle">Computer Engineer</h3>
-                        <p class="home_description">Proficient in web design, programming and data structures, producing quality
+                        <p class="home_description">Proficient in web design, programming and data structures, producing
+                            quality
                             work.</p>
                         <a href="#contact" class="button button_flex">
                             Contact Me! <i class="uil uil-message button_icon"></i>
@@ -180,7 +194,8 @@
             <span class="section_subtitle">My Introduction</span>
 
             <div class="about_container container grid">
-                <img src="/UltimatePortfolioWebsite/Images/aboutImg.png" alt="Gaurav Garje's Image" title="Gaurav Garje" class="about_img">
+                <img src="/UltimatePortfolioWebsite/Images/aboutImg.png" alt="Gaurav Garje's Image" title="Gaurav Garje"
+                    class="about_img">
 
                 <div class="about_data">
                     <p class="about_description">
@@ -205,7 +220,8 @@
                     </div>
 
                     <div class="about_buttons">
-                        <a download="" href="/UltimatePortfolioWebsite/Pdf/GauravGarje_CV.pdf" class="button button--flex">
+                        <a download="" href="/UltimatePortfolioWebsite/Pdf/GauravGarje_CV.pdf"
+                            class="button button--flex">
                             Download CV <i class="uil uil-file-download button_icon"></i>
                         </a>
                     </div>
@@ -385,7 +401,7 @@
         </section>
         <!-- ******************** MAIN >> SKILLS (end) ******************** -->
 
-        
+
         <!-- #################### MAIN >>   QUALIFICATION (start) #################### -->
         <section class="qualification section">
             <h2 class="section_title">Qualification</h2>
@@ -449,7 +465,8 @@
                         <div class="qualification_data">
                             <div>
                                 <h3 class="qualification_title">Senior Secondary (Class 10)</h3>
-                                <span class="qualification_subtitle">ARMY PUBLIC SCHOOL, JODHPUR (RAJASTHAN, INDIA)</span>
+                                <span class="qualification_subtitle">ARMY PUBLIC SCHOOL, JODHPUR (RAJASTHAN,
+                                    INDIA)</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-schedule"></i>
                                     2014 - 2016
@@ -800,12 +817,6 @@
     <a href="#home" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
-
-    <!-- SWIPER JS -->
-    <!-- <script src="ASSETS/JS/swiper-bundle.min.js"></script> -->
-
-    <!-- MAIN JS -->
-    <script src="/UltimatePortfolioWebsite/Javascript/main.js"></script>
 
 </body>
 
