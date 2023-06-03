@@ -1,11 +1,11 @@
 // ACTIVATE TABS
 function activateTab(tab) {
-    var tabs = document.querySelectorAll(".nav_link");    
+    var tabs = document.querySelectorAll(".nav_link");
 
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove("active-link");
     }
-    
+
     tab.classList.add("active-link");
 }
 
@@ -38,6 +38,10 @@ function vanish() {
 }
 
 /* ******************** PRELOADER (end) ******************** */
+
+// HOME
+
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),

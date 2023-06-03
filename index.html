@@ -10,7 +10,7 @@
     <meta name="author" content="GAURAV GARJE">
 
     <title>PORTFOLIO-Gaurav Garje</title>
-    
+
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CORE UI ICONS -->
@@ -164,8 +164,11 @@
                     </div>
 
                     <div class="home_data">
-                        <h1 class="home_title">Hi, I am Gaurav Garje</h1>
-                        <h3 class="home_subtitle">Computer Engineer</h3>
+                        <h1 class="home_title">Hi, myself Gaurav Garje</h1>
+                        <div class="home_subtitle">
+                            <span class="text first-text">I am </span>
+                            <span class="text second-text">Computer Engineer</span>
+                        </div>
                         <p class="home_description">Proficient in web design, programming and data structures, producing
                             quality
                             work.</p>
@@ -174,6 +177,29 @@
                         </a>
                     </div>
                 </div>
+
+                <script>
+                    const text = document.querySelector(".second-text");
+
+                    const textLoad = () => {
+                        setTimeout(() => {
+                            text.textContent = "Computer Engineer";
+                        }, 0);
+                        setTimeout(() => {
+                            text.textContent = "Java Programmer";
+                        }, 4000);
+                        setTimeout(() => {
+                            text.textContent = " Website Developer";
+                        }, 8000);
+                        setTimeout(() => {
+                            text.textContent = "Android Developer";
+                        }, 12000);
+                    }
+
+                    textLoad();
+
+                    setInterval(textLoad, 12000);
+                </script>
 
                 <div class="home_scroll">
                     <a href="#about" class="home_scroll-button button--flex">

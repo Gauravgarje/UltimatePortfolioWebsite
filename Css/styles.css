@@ -489,6 +489,39 @@ img {
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+    overflow: hidden;
+}
+
+.home_subtitle .text{
+    position: relative;
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home_subtitle .text.first-text{
+    color: var(--text-color);
+}
+
+.text.second-text:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--body-color);
+    border-left: 2px solid var(--first-color);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .home_description {
