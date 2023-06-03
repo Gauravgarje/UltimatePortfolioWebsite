@@ -169,9 +169,7 @@
                             <span class="text first-text">I am </span>
                             <span class="text second-text">Computer Engineer</span>
                         </div>
-                        <p class="home_description">Proficient in web design, programming and data structures, producing
-                            quality
-                            work.</p>
+                        <p class="home_description">Proficient in transforming ideas into exceptional code!</p>
                         <a href="#contact" class="button button_flex">
                             Contact Me! <i class="uil uil-message button_icon"></i>
                         </a>
@@ -225,28 +223,38 @@
 
                 <div class="about_data">
                     <p class="about_description">
-                        Web developer with extensive knowledge of HTML, CSS, Javascript.
+                        I am a passionate software developer with expertise in Java and Scala applications, leveraging
+                        the power of the Spring framework to build robust and scalable solutions. With a solid
+                        understanding of cloud computing technology, I excel in developing innovative software
+                        architectures that optimize performance and efficiency.
                     </p>
+                    <br>
+                    <p>
+                        My expertise extends to other essential tools and frameworks, including ActiveMQ, Grafana,
+                        Scala, Apache Kafka, and Spring Boot.
+                    </p>
+                    <br>
 
                     <div class="about_info">
                         <div>
-                            <span class="about_info-title">12+</span>
+                            <span class="about_info-title num" data-val="15">00</span>
                             <span class="about_info-name">Months <br> experience</span>
                         </div>
 
                         <div>
-                            <span class="about_info-title">2+</span>
-                            <span class="about_info-name">Completed <br> project</span>
+                            <span class="about_info-title num" data-val="3">00</span>
+                            <span class="about_info-name">Professional Certificates <br> earned</span>
                         </div>
 
                         <div>
-                            <span class="about_info-title">1+</span>
+                            <span class="about_info-title num" data-val="2">00</span>
                             <span class="about_info-name">Companies <br> worked</span>
                         </div>
                     </div>
 
                     <div class="about_buttons">
-                        <a download="" href="/UltimatePortfolioWebsite/Pdf/GauravGarje_CV.pdf"
+                        <a download=""
+                            href="https://docs.google.com/document/d/1EHocuozjjtCbwpLjOZD1UTV5ob2ppb1gYxl70fvEwSM/edit?usp=sharing"
                             class="button button--flex">
                             Download CV <i class="uil uil-file-download button_icon"></i>
                         </a>
@@ -254,6 +262,24 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            let valueDisplays = document.querySelectorAll(".num");
+            let interval = 2000;
+
+            valueDisplays.forEach((valueDisplay) => {
+                let startValue = 0;
+                let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                let duration = Math.floor(interval / endValue);
+                let counter = setInterval(function () {
+                    startValue += 1;
+                    valueDisplay.textContent = startValue;
+                    if (startValue == endValue) {
+                        clearInterval(counter);
+                    }
+                }, duration);
+            });
+        </script>
         <!-- ******************** MAIN >> ABOUT (end) ******************** -->
 
         <!-- #################### MAIN >> SKILLS (start) #################### -->
