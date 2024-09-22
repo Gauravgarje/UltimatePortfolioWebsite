@@ -1,1022 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Portfolio, Gaurav Garje" />
-    <meta name="description" content="Gaurav Garje's Portfolio Website" />
-    <meta name="author" content="GAURAV GARJE" />
 
-    <title>PORTFOLIO-Gaurav Garje</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Portfolio, Gaurav Garje" />
+  <meta name="description" content="Gaurav Garje's Portfolio Website" />
+  <meta name="author" content="GAURAV GARJE" />
 
-    <!-- UNICONS -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <!-- CORE UI ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css"
-    />
+  <title>PORTFOLIO-Gaurav Garje</title>
 
-    <!-- FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="/UltimatePortfolioWebsite/Images/nameFavicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="icon"
-      href="/UltimatePortfolioWebsite/Images/nameFavicon.ico"
-      type="image/x-icon"
-    />
+  <!-- UNICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!-- CORE UI ICONS -->
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/UltimatePortfolioWebsite/Css/styles.css" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="Images/nameFavicon.ico" type="image/x-icon" />
+  <link rel="icon" href="Images/nameFavicon.ico" type="image/x-icon" />
 
-    <!-- MAIN JS -->
-    <script src="/UltimatePortfolioWebsite/Javascript/main.js"></script>
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="Css/styles.css" />
 
-  <body>
-    <!-- #################### PRELOADER (start) #################### -->
-    <div id="loading">
-      <div class="preloader_main">
-        <div class="preloader_text">Gaurav Garje</div>
-        <div class="preloader_title">PORTFOLIO</div>
-        <div class="preloader_bar">
-          <div id="preloader_fill"></div>
+  <!-- MAIN JS -->
+  <script src="Javascript/main.js"></script>
+</head>
+
+<body>
+
+  <!-- ---------------- PRELOADER (start) ---------------- -->
+  <div id="loading">
+    <div class="preloader_main">
+      <div class="preloader_text">Gaurav Garje</div>
+      <div class="preloader_title">PORTFOLIO</div>
+      <div class="preloader_bar">
+        <div id="preloader_fill"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------- PRELOADER (end) ---------------- -->
+
+  <!-- <video src="" width="400" controls loop muted poster=""></video> -->
+
+  <!-- ---------------- HEADER (start) ---------------- -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <img src="Images/myLogo.png" title="Logo" class="my_logo" />
+      <a href="#home" title="Name" class="nav_logo">Gaurav Garje</a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link" onclick="activateTab(this)">
+              <i class="uil uil-estate nav_icon"></i>HOME
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-user-square nav_icon"></i>ABOUT ME
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-file-check-alt nav_icon"></i>SKILLS
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#experience" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-file-check-alt nav_icon"></i>EXPERIENCE
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#education" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-file-check-alt nav_icon"></i>EDUCATION
+            </a>
+          </li>
+          <!-- <li class="nav_item">
+            <a href="#" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-image nav_icon"></i>ACHIEVEMENTS
+            </a>
+          </li> -->
+          <li class="nav_item">
+            <a href="#projects" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-bag-alt nav_icon"></i>PROJECTS
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link" onclick="activateTab(this)">
+              <i class="uil uil-envelope nav_icon"></i>CONTACT ME
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close" id="nav-close"></i>
+      </div>
+
+      <!-- <div class="nav_btns"> -->
+        <!-- Theme change button -->
+        <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
+
+        <!-- <div class="nav_toggle" id="nav-toggle"> -->
+          <!-- <i class="uil uil-apps"></i> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    </nav>
+  </header>
+  <!-- ---------------- HEADER (end) ---------------- -->
+
+
+  <!-- ---------------- MAIN (start) ---------------- -->
+  <main class="main">
+    <!-- ---------------- MAIN >> HOME (start) ---------------- -->
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content grid">
+          <div class="home_social">
+            <a href="https://www.linkedin.com/in/garje-gaurav2000/" target="_blank" class="home_social-icon">
+              <i class="uil uil-linkedin" title="Linkedin"></i>
+            </a>
+
+            <a href="https://www.hackerrank.com/FalconEyedAlaric" target="_blank" class="home_social-icon">
+              <i class="cib-hackerrank" title="Hackerrank"></i>
+            </a>
+
+            <a href="https://www.kaggle.com/gauravgarje" target="_blank" class="home_social-icon">
+              <i class="cib-kaggle" title="Kaggle"></i>
+            </a>
+
+            <a href="https://leetcode.com/Gaurav_Garje/" target="_blank" class="home_social-icon">
+              <i class="cib-leetcode" title="LeetCode"></i>
+            </a>
+
+            <a href="https://github.com/Gauravgarje" target="_blank" class="home_social-icon">
+              <i class="uil uil-github" title="Github"></i>
+            </a>
+
+            <a href="https://auth.geeksforgeeks.org/user/gauravgarje2000/profile" target="_blank"
+              class="home_social-icon">
+              <i class="cib-justgiving" title="Geeks for Geeks"></i>
+            </a>
+          </div>
+          <div class="home_img">
+            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home_blob-img" alt="Gaurav Garje" x="30" y="-20" xlink:href="Images/main_pic.png" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="home_data">
+            <h1 class="home_title">Hi, myself Gaurav Garje</h1>
+            <div class="home_subtitle">
+              <span class="text first-text">I am </span>
+              <span class="text second-text">Computer Engineer</span>
+            </div>
+            <p class="home_description">
+              Proficient in transforming ideas into exceptional code!
+            </p>
+            <a href="#contact" class="button button_flex">
+              Contact Me! <i class="uil uil-message button_icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home_scroll">
+          <a href="#about" class="home_scroll-button button--flex">
+            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+            <span class="home_scroll-name">Explore Me</span>
+            <i class="uil uil-angle-double-down home_scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------- MAIN >> HOME (end) ---------------- -->
+
+    <!-- ---------------- MAIN >> ABOUT ME (start) ---------------- -->
+    <section class="about section" id="about">
+      <h2 class="section_title">About Me</h2>
+      <span class="section_subtitle">My Introduction</span>
+
+      <div class="about_container container grid">
+        <img src="Images/aboutImg.png" alt="Gaurav Garje's Image" title="Gaurav Garje" class="about_img" />
+
+        <div class="about_data">
+          <p class="about_description">
+            I am a dedicated and skilled Java Developer specializing in Fraud Technology within the esteemed Morgan
+            Stanley firm as Full Time Consultant (FTC). With a strong background in integrating diverse systems and a
+            passion for delivering innovative solutions, I play a vital role in the integration of fraud detection
+            technologies between ETrade and Morgan Stanley.
+          </p>
+          <br />
+          <p>
+            I am constantly seeking new opportunities to enhance my knowledge and stay up-to-date with emerging
+            technologies, enabling me to provide optimized solutions and drive continuous improvement.
+          </p>
+          <br />
+
+          <div class="about_info">
+            <div>
+              <span class="about_info-title num" id="monthsElapsed" data-val="00">00</span>
+              <span class="about_info-name">Months <br />
+                experience</span>
+            </div>
+
+            <div>
+              <span class="about_info-title num" data-val="3">00</span>
+              <span class="about_info-name">Professional Certificates <br />
+                earned</span>
+            </div>
+
+            <div>
+              <span class="about_info-title num" data-val="2">00</span>
+              <span class="about_info-name">Companies <br />
+                worked</span>
+            </div>
+          </div>
+
+          <div class="about_buttons">
+            <a download=""
+              href="https://docs.google.com/document/d/1EHocuozjjtCbwpLjOZD1UTV5ob2ppb1gYxl70fvEwSM/edit?usp=sharing"
+              class="button button--flex">
+              Download CV <i class="uil uil-file-download button_icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------- MAIN >> ABOUT ME (end) ---------------- -->
+
+    <!-- ---------------- MAIN >> SKILLS (start) ---------------- -->
+    <section class="services section" id="skills">
+      <h2 class="section_title">Skills</h2>
+      <span class="section_subtitle">My technical levels</span>
+
+      <div class="skills__content grid">
+        <!-- download brand logo svg from https://worldvectorlogo.com/ -->
+        <div class="skills__box">
+          <img src="Images/html_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">HTML</span>
+        </div>
+
+        <div class="skills__box">
+          <img src="Images/css_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">CSS</span>
+        </div>
+
+        <div class="skills__box">
+          <img src="Images/javascript_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">JAVASCRIPT</span>
+        </div>
+
+        <div class="skills__box">
+          <img src="Images/java_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">JAVA</span>
+        </div>
+
+        <div class="skills__box">
+          <img src="Images/kafka_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">KAFKA</span>
+        </div>
+
+        <div class="skills__box">
+          <img src="Images/spring_svg.svg" alt="image" class="skills__img">
+          <span class="skills__name">SPRING BOOT</span>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------- MAIN >> SKILLS (end) ---------------- -->
+
+    <!-- ---------------- MAIN >> EXPERIENCE (start) ---------------- -->
+    <section class="services section" id="experience">
+      <h2 class="section_title">Experience</h2>
+      <span class="section_subtitle">My Experience till now</span>
+    </section>
+
+    <div class="qualification_sections">
+      <!-- QUALIFICATION CONTENT 1 -->
+      <div class="qualification_content qualification_active" data-content id="experience">
+        <!-- QUALIFICATION 1 -->
+        <div class="qualification_data">
+          <div>
+            <img src="Images/mthree_logo.jpeg" alt="image" class="qualification__img">
+            <h3 class="qualification_title">mThree Alumni SME</h3>
+            <span class="qualification_subtitle">mThree (Mumbai)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Sep 2024 - Present
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
+          </div>
+        </div>
+
+        <!-- QUALIFICATION 2 -->
+        <div class="qualification_data">
+          <div></div>
+
+          <div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
+          </div>
+
+          <div>
+            <img src="Images/wileyedge_logo.jpeg" alt="image" class="qualification__img">
+            <h3 class="qualification_title">Wiley Edge Alumni - SME</h3>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Jan 2024 - Aug 2024 | 8 months
+            </div>
+            <h3 class="qualification_title">Support Analyst</h3>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Jul 2023 - Dec 2023 | 6 months
+            </div>
+            <h3 class="qualification_title">Support Associate</h3>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Jan 2023 - Jun 2023 | 6 months
+            </div>
+            <h3 class="qualification_title">Junior Support Associate</h3>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Jul 2022 - Dec 2022 | 6 months
+            </div>
+            <span class="qualification_subtitle">Wiley Edge (Mumbai)</span>
+          </div>
+        </div>
+
+        <!-- QUALIFICATION 3 -->
+        <div class="qualification_data">
+          <div>
+            <img src="Images/datametica_logo.jpeg" alt="image" class="qualification__img">
+            <h3 class="qualification_title">Associate Engineer Intern</h3>
+            <span class="qualification_subtitle">Datametica Solutions Private Limited (Pune)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Feb 2022 - Jun 2022 | 5 months
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
+          </div>
+        </div>
+
+        <!-- QUALIFICATION 4 -->
+        <div class="qualification_data">
+          <div>
+          </div>
+
+          <div>
+            <span class="qualification_rounder"></span>
+            <!-- <span class="qualification_line"></span> -->
+          </div>
+
+          <div>
+            <img src="Images/mthree_logo.jpeg" alt="image" class="qualification__img">
+            <h3 class="qualification_title">Intern</h3>
+            <span class="qualification_subtitle">mThree (Mumbai)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              Feb 2022 - Apr 2022 | 3 months
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- ******************** PRELOADER (end) ******************** -->
+    <!-- ---------------- MAIN >> EXPERIENCE (end) ---------------- -->
 
-    <!-- #################### HEADER (start) #################### -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <img
-          src="/UltimatePortfolioWebsite/Images/myLogo.png"
-          title="Logo"
-          class="my_logo"
-        />
-        <a href="#home" title="Name" class="nav_logo">Gaurav Garje</a>
+    <!-- ---------------- MAIN >> EDUCATION (start) ---------------- -->
+    <section class="services section" id="education">
+      <h2 class="section_title">Education</h2>
+      <span class="section_subtitle">My Education till now</span>
+    </section>
 
-        <div class="nav_menu" id="nav-menu">
-          <ul class="nav_list grid">
-            <li class="nav_item">
-              <a
-                href="#home"
-                class="nav_link active-link"
-                onclick="activateTab(this)"
-              >
-                <i class="uil uil-estate nav_icon"></i>HOME
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#about" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-user-square nav_icon"></i>ABOUT ME
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-file-check-alt nav_icon"></i>EXPERIENCE
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-file-check-alt nav_icon"></i>EDUCATION
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#skills" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-file-check-alt nav_icon"></i>SKILLS
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-image nav_icon"></i>ACHIEVEMENTS
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#services" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-bag-alt nav_icon"></i>PROJECTS
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#contact" class="nav_link" onclick="activateTab(this)">
-                <i class="uil uil-envelope nav_icon"></i>CONTACT ME
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav_close" id="nav-close"></i>
-        </div>
-
-        <div class="nav_btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav_toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- ******************** HEADER (end) ******************** -->
-
-    <!-- #################### MAIN (start) #################### -->
-    <main class="main">
-      <!-- #################### MAIN >> HOME (start) #################### -->
-      <section class="home section" id="home">
-        <div class="home_container container grid">
-          <div class="home_content grid">
-            <div class="home_social">
-              <a
-                href="https://www.linkedin.com/in/garje-gaurav2000/"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="uil uil-linkedin" title="Linkedin"></i>
-              </a>
-
-              <a
-                href="https://www.hackerrank.com/FalconEyedAlaric"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="cib-hackerrank" title="Hackerrank"></i>
-              </a>
-
-              <a
-                href="https://www.kaggle.com/gauravgarje"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="cib-kaggle" title="Kaggle"></i>
-              </a>
-
-              <a
-                href="https://leetcode.com/Gaurav_Garje/"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="cib-leetcode" title="LeetCode"></i>
-              </a>
-
-              <a
-                href="https://github.com/Gauravgarje"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="uil uil-github" title="Github"></i>
-              </a>
-
-              <a
-                href="https://auth.geeksforgeeks.org/user/gauravgarje2000/profile"
-                target="_blank"
-                class="home_social-icon"
-              >
-                <i class="cib-justgiving" title="Geeks for Geeks"></i>
-              </a>
-            </div>
-            <div class="home_img">
-              <svg
-                class="home_blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home_blob-img"
-                    x="30"
-                    y="-20"
-                    xlink:href="/UltimatePortfolioWebsite/Images/main_pic.png"
-                  />
-                </g>
-              </svg>
-            </div>
-
-            <div class="home_data">
-              <h1 class="home_title">Hi, myself Gaurav Garje</h1>
-              <div class="home_subtitle">
-                <span class="text first-text">I am </span>
-                <span class="text second-text">Computer Engineer</span>
-              </div>
-              <p class="home_description">
-                Proficient in transforming ideas into exceptional code!
-              </p>
-              <a href="#contact" class="button button_flex">
-                Contact Me! <i class="uil uil-message button_icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <script>
-            const text = document.querySelector(".second-text");
-
-            const textLoad = () => {
-              setTimeout(() => {
-                text.textContent = "Computer Engineer";
-              }, 0);
-              setTimeout(() => {
-                text.textContent = "Java Programmer";
-              }, 4000);
-              setTimeout(() => {
-                text.textContent = " Website Developer";
-              }, 8000);
-              setTimeout(() => {
-                text.textContent = "Android Developer";
-              }, 12000);
-            };
-
-            textLoad();
-
-            setInterval(textLoad, 12000);
-          </script>
-
-          <div class="home_scroll">
-            <a href="#about" class="home_scroll-button button--flex">
-              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-              <span class="home_scroll-name">Explore Me</span>
-              <i class="uil uil-angle-double-down home_scroll-arrow"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ******************** MAIN >> HOME (end) ******************** -->
-
-      <!-- <hr size="3"> -->
-      <!-- #################### MAIN >> ABOUT (start) #################### -->
-      <section class="about section" id="about">
-        <h2 class="section_title">About Me</h2>
-        <span class="section_subtitle">My Introduction</span>
-
-        <div class="about_container container grid">
-          <img
-            src="/UltimatePortfolioWebsite/Images/aboutImg.png"
-            alt="Gaurav Garje's Image"
-            title="Gaurav Garje"
-            class="about_img"
-          />
-
-          <div class="about_data">
-            <p class="about_description">
-              I am a passionate software developer with expertise in Java and
-              Scala applications, leveraging the power of the Spring framework
-              to build robust and scalable solutions. With a solid understanding
-              of cloud computing technology, I excel in developing innovative
-              software architectures that optimize performance and efficiency.
-            </p>
-            <br />
-            <p>
-              My expertise extends to other essential tools and frameworks,
-              including ActiveMQ, Grafana, Scala, Apache Kafka, and Spring Boot.
-            </p>
-            <br />
-
-            <div class="about_info">
-              <div>
-                <span class="about_info-title num" data-val="15">00</span>
-                <span class="about_info-name"
-                  >Months <br />
-                  experience</span
-                >
-              </div>
-
-              <div>
-                <span class="about_info-title num" data-val="3">00</span>
-                <span class="about_info-name"
-                  >Professional Certificates <br />
-                  earned</span
-                >
-              </div>
-
-              <div>
-                <span class="about_info-title num" data-val="2">00</span>
-                <span class="about_info-name"
-                  >Companies <br />
-                  worked</span
-                >
-              </div>
-            </div>
-
-            <div class="about_buttons">
-              <a
-                download=""
-                href="https://docs.google.com/document/d/1EHocuozjjtCbwpLjOZD1UTV5ob2ppb1gYxl70fvEwSM/edit?usp=sharing"
-                class="button button--flex"
-              >
-                Download CV <i class="uil uil-file-download button_icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <script>
-        let valueDisplays = document.querySelectorAll(".num");
-        let interval = 2000;
-
-        valueDisplays.forEach((valueDisplay) => {
-          let startValue = 0;
-          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-          let duration = Math.floor(interval / endValue);
-          let counter = setInterval(function () {
-            startValue += 1;
-            valueDisplay.textContent = startValue;
-            if (startValue == endValue) {
-              clearInterval(counter);
-            }
-          }, duration);
-        });
-      </script>
-      <!-- ******************** MAIN >> ABOUT (end) ******************** -->
-
-      <!-- #################### MAIN >> SKILLS (start) #################### -->
-      <section class="skills section" id="skills">
-        <h2 class="section_title">Skills</h2>
-        <span class="section_subtitle">My technical levels</span>
-
-        <div class="skills_container container grid">
+    <div class="qualification_sections">
+      <!-- QUALIFICATION CONTENT 1 -->
+      <div class="qualification_content qualification_active" data-content id="education">
+        <!-- QUALIFICATION 1 -->
+        <div class="qualification_data">
           <div>
-            <!-- SKILL 1 -->
-            <div class="skills_content skills_open">
-              <div class="skills_header">
-                <i class="uil uil-brackets-curly skills_icon"></i>
-
-                <div>
-                  <h1 class="skills_title">Frontend developer</h1>
-                  <span class="skills_subtitle">More than 2 years</span>
-                </div>
-
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">HTML</h3>
-                    <span class="skills_number">90%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_html"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">CSS</h3>
-                    <span class="skills_number">80%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_css"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">JavaScript</h3>
-                    <span class="skills_number">50%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_js"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">React</h3>
-                    <span class="skills_number">25%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_react"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- SKILL 2 -->
-            <div class="skills_content skills_close">
-              <div class="skills_header">
-                <i class="uil uil-database skills_icon"></i>
-
-                <div>
-                  <h1 class="skills_title">Backend developer</h1>
-                  <span class="skills_subtitle">More than 1 year</span>
-                </div>
-
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">PHP</h3>
-                    <span class="skills_number">25%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_php"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Node JS</h3>
-                    <span class="skills_number">10%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_node"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Firebase</h3>
-                    <span class="skills_number">50%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_firebase"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Python</h3>
-                    <span class="skills_number">60%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_python"></span>
-                  </div>
-                </div>
-              </div>
+            <h3 class="qualification_title">BE Computer Engineering</h3>
+            <span class="qualification_subtitle">PUNE UNIVERSITY (MAHARASHTRA, INDIA)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              2018 - 2022
             </div>
           </div>
 
           <div>
-            <!-- SKILL 3 -->
-            <div class="skills_content skills_close">
-              <div class="skills_header">
-                <i class="uil uil-swatchbook skills_icon"></i>
-
-                <div>
-                  <h1 class="skills_title">Designer</h1>
-                  <span class="skills_subtitle">More than 5 years</span>
-                </div>
-
-                <i class="uil uil-angle-down skills_arrow"></i>
-              </div>
-
-              <div class="skills_list grid">
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Figma</h3>
-                    <span class="skills_number">10%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_figma"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Sketch</h3>
-                    <span class="skills_number">15%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_sketch"></span>
-                  </div>
-                </div>
-
-                <div class="skills_data">
-                  <div class="skills_titles">
-                    <h3 class="skills_name">Photoshop</h3>
-                    <span class="skills_number">85%</span>
-                  </div>
-                  <div class="skills_bar">
-                    <span class="skills_percentage skills_photoshop"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
           </div>
         </div>
-      </section>
-      <!-- ******************** MAIN >> SKILLS (end) ******************** -->
 
-      <!-- #################### MAIN >>   QUALIFICATION (start) #################### -->
-      <section class="qualification section">
-        <h2 class="section_title">Qualification</h2>
-        <span class="section_subtitle">My personal journey</span>
+        <!-- QUALIFICATION 2 -->
+        <div class="qualification_data">
+          <div></div>
 
-        <div class="qualification_container container">
-          <div class="qualification_tabs">
-            <div
-              class="qualification_button button--flex qualification_active"
-              data-target="#education"
-            >
-              <i class="uil uil-graduation-cap qualification_icon"></i>
-              Education
-            </div>
-
-            <div class="qualification_button button--flex" data-target="#work">
-              <i class="uil uil-suitcase-alt qualification_icon"></i>
-              Work
-            </div>
-          </div>
-
-          <div class="qualification_sections">
-            <!-- QUALIFICATION CONTENT 1 -->
-            <div
-              class="qualification_content qualification_active"
-              data-content
-              id="education"
-            >
-              <!-- QUALIFICATION 1 -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">BE Computer Engineering</h3>
-                  <span class="qualification_subtitle"
-                    >PUNE UNIVERSITY (MAHARASHTRA, INDIA)</span
-                  >
-                  <div class="qualification_calendar">
-                    <i class="uil uil-schedule"></i>
-                    2018 - 2022
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification_rounder"></span>
-                  <span class="qualification_line"></span>
-                </div>
-              </div>
-
-              <!-- QUALIFICATION 2 -->
-              <div class="qualification_data">
-                <div></div>
-
-                <div>
-                  <span class="qualification_rounder"></span>
-                  <span class="qualification_line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification_title">
-                    Higher Secondary (Class 12)
-                  </h3>
-                  <span class="qualification_subtitle"
-                    >ARMY PUBLIC SCHOOL, KALUCHAK (J&K, INDIA)</span
-                  >
-                  <div class="qualification_calendar">
-                    <i class="uil uil-schedule"></i>
-                    2016 - 2018
-                  </div>
-                </div>
-              </div>
-
-              <!-- QUALIFICATION 3 -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">
-                    Senior Secondary (Class 10)
-                  </h3>
-                  <span class="qualification_subtitle"
-                    >ARMY PUBLIC SCHOOL, JODHPUR (RAJASTHAN, INDIA)</span
-                  >
-                  <div class="qualification_calendar">
-                    <i class="uil uil-schedule"></i>
-                    2014 - 2016
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification_rounder"></span>
-                  <!-- <span class="qualification_line"></span> -->
-                </div>
-              </div>
-            </div>
-            <!-- QUALIFICATION CONTENT 2 -->
-            <div class="qualification_content" data-content id="work">
-              <!-- QUALIFICATION 1 -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Software Engineer</h3>
-                  <span class="qualification_subtitle">TCS</span>
-                  <div class="qualification_calendar">
-                    <i class="uil uil-schedule"></i>
-                    2022 - Present
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification_rounder"></span>
-                  <!-- <span class="qualification_line"></span> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ******************** MAIN >> QUALIFICATIONS (end) ******************** -->
-
-      <!-- SERVICES -->
-      <section class="services section" id="services">
-        <h2 class="section_title">Services</h2>
-        <span class="section_subtitle">What i offer</span>
-
-        <div class="services_container container grid">
-          <!-- SERVICES 1 -->
-          <div class="services_content">
-            <div>
-              <i class="uil uil-web-grid services_icon"></i>
-              <h3 class="services_title">
-                Ui/Ux <br />
-                Designer
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services_button"
-            >
-              View More
-              <i class="uil uil-caret-right button_icon"></i>
-            </span>
-
-            <div class="services_modal">
-              <div class="services_modal-content">
-                <h4 class="services_modal-title">
-                  Ui/Ux <br />
-                  Designer
-                </h4>
-                <i class="uil uil-times services_modal-close"></i>
-
-                <ul class="services_modal-services grid">
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop the user interface</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Web Page development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Android app development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop apps</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- SERVICES 2 -->
-          <div class="services_content">
-            <div>
-              <i class="uil uil-arrow services_icon"></i>
-              <h3 class="services_title">
-                Frontend <br />
-                Developer
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services_button"
-            >
-              View More
-              <i class="uil uil-caret-right button_icon"></i>
-            </span>
-
-            <div class="services_modal">
-              <div class="services_modal-content">
-                <h4 class="services_modal-title">
-                  Frontend <br />
-                  Developer
-                </h4>
-                <i class="uil uil-times services_modal-close"></i>
-
-                <ul class="services_modal-services grid">
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop the user interface</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Web Page development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Android app development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop apps</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- SERVICES 3 -->
-          <div class="services_content">
-            <div>
-              <i class="uil uil-pen services_icon"></i>
-              <h3 class="services_title">
-                Branding <br />
-                Designer
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services_button"
-            >
-              View More
-              <i class="uil uil-caret-right button_icon"></i>
-            </span>
-
-            <div class="services_modal">
-              <div class="services_modal-content">
-                <h4 class="services_modal-title">
-                  Branding <br />
-                  Designer
-                </h4>
-                <i class="uil uil-times services_modal-close"></i>
-
-                <ul class="services_modal-services grid">
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop the user interface</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Web Page development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>Android app development</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
-                    <p>I develop apps</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PORTFOLIO
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section_title" id="portfolio">Portfolio</h2>
-            <span class="section_subtitle">Most Recent Wrok</span>
-
-            <div class="portfolio_container container swiper-container">
-                <div class="swiper-wrapper">
-                    PORTFOLIO 1
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="ASSETS/IMG/" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Modern Website</h3>
-                            <p class="portfolio_description">This is the portfolio description</p>
-                            <a href="#" class="button button--flex button--small portfolio_button">
-                                Demo
-                                <i class="uil uil-arrow-right button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    PORTFOLIO 2
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="ASSETS/IMG/" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Brand Design</h3>
-                            <p class="portfolio_description">This is the portfolio description</p>
-                            <a href="#" class="button button--flex button--small portfolio_button">
-                                Demo
-                                <i class="uil uil-arrow-right button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    PORTFOLIO 3
-                    <div class="portfolio_content grid swiper-slide">
-                        <img src="ASSETS/IMG/" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title">Online Store</h3>
-                            <p class="portfolio_description">This is the portfolio description</p>
-                            <a href="#" class="button button--flex button--small portfolio_button">
-                                Demo
-                                <i class="uil uil-arrow-right button_icon"></i>
-                            </a>
-                        </div>
-                    </div>-->
-      <!-- Add Arrows -->
-      <!-- <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div> -->
-      <!-- Add Pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
-      <!-- </div> -->
-      <!-- 
-            </div>
-        </section> -->
-
-      <!-- PROJECT IN MIND -->
-      <!-- <section class="project section">
-            <div class="project_bg">
-                <div class="project_container container grid">
-                    <div class="project_data">
-                        <h2 class="project_title">You have a new project</h2>
-                        <p class="project_description">This is project description</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project_icon button_icon"></i>
-                        </a>
-                    </div>
-
-                    <img src="#" alt="" class="project_img">
-                </div>
-            </div>
-        </section> -->
-
-      <!-- TESTIMONIAL -->
-      <!-- <section class="testimonial section">
-
-        </section> -->
-
-      <!-- CONTACT ME -->
-      <section class="contact section" id="contact">
-        <h2 class="section_title">Contact Me</h2>
-        <span class="section_subtitle">Get in touch</span>
-        <div class="contact_container container grid">
           <div>
-            <div class="contact_information">
-              <i class="uil uil-phone contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Call Me</h3>
-                <span class="contact_subtitle">+91-8080548252</span>
-              </div>
-            </div>
-
-            <div class="contact_information">
-              <i class="uil uil-envelope-alt contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Email</h3>
-                <span class="contact_subtitle">gauravgarje2000@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contact_information">
-              <i class="uil uil-map-marker contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Location</h3>
-                <span class="contact_subtitle">Pune-India</span>
-              </div>
-            </div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
           </div>
 
-          <form action="" class="contact_form grid">
-            <div class="contact_inputs grid">
-              <div class="contact_content">
-                <label for="" class="contact_label">Name</label>
-                <input type="text" class="contact_input" />
-              </div>
-              <div class="contact_content">
-                <label for="" class="contact_label">Email</label>
-                <input type="email" class="contact_input" />
-              </div>
-            </div>
-            <div class="contact_content">
-              <label for="" class="contact_label">Project</label>
-              <input type="text" class="contact_input" />
-            </div>
-            <div class="contact_content">
-              <label for="" class="contact_label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact_input"
-              ></textarea>
-            </div>
-
-            <div>
-              <a href="#" class="button button--flex">
-                Send Message
-                <i class="uil uil-message button_icon"></i>
-              </a>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!-- ******************** MAIN (end) ******************** -->
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer_bg">
-        <div class="footer_container container grid">
           <div>
-            <h1 class="footer_title">GAURAV GARJE</h1>
-            <span class="footer_subtitle">Computer Engineer</span>
-          </div>
-
-          <ul class="footer_links">
-            <li>
-              <a href="#services" class="footer_link">Services</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer_link">Contact Me</a>
-            </li>
-            <li>
-              <a href="#services" class="footer_link">Services</a>
-            </li>
-          </ul>
-          <div class="footer_socials">
-            <a
-              href="https://www.facebook.com/gaurav.garje.21/"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-facebook" title="Facebook"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/gaurav.garje.21/"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-instagram-alt" title="Instagram"></i>
-            </a>
-            <a
-              href="https://twitter.com/gauravgarje21"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-twitter" title="Twitter"></i>
-            </a>
+            <h3 class="qualification_title">
+              Higher Secondary (Class 12)
+            </h3>
+            <span class="qualification_subtitle">ARMY PUBLIC SCHOOL, KALUCHAK (J&K, INDIA)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              2016 - 2018
+            </div>
           </div>
         </div>
 
-        <p class="footer_copy">&#169; Gaurav Garje | All rights reserved</p>
+        <!-- QUALIFICATION 3 -->
+        <div class="qualification_data">
+          <div>
+            <h3 class="qualification_title">
+              Senior Secondary (Class 10)
+            </h3>
+            <span class="qualification_subtitle">ARMY PUBLIC SCHOOL, JODHPUR (RAJASTHAN, INDIA)</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              2014 - 2016
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification_rounder"></span>
+            <!-- <span class="qualification_line"></span> -->
+          </div>
+        </div>
       </div>
-    </footer>
+      <!-- QUALIFICATION CONTENT 2 -->
+      <div class="qualification_content" data-content id="work">
+        <!-- QUALIFICATION 1 -->
+        <div class="qualification_data">
+          <div>
+            <h3 class="qualification_title">Software Engineer</h3>
+            <span class="qualification_subtitle">TCS</span>
+            <div class="qualification_calendar">
+              <i class="uil uil-schedule"></i>
+              2022 - Present
+            </div>
+          </div>
 
-    <!-- SCROLL TOP -->
-    <a href="#home" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
-  </body>
+          <div>
+            <span class="qualification_rounder"></span>
+            <!-- <span class="qualification_line"></span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------- MAIN >> EDUCATION (end) ---------------- -->
 
-  <!-- for PRELOADER -->
-  <!-- jquery version 1.12.4 -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-    integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+    <!-- ---------------- MAIN >> PROJECTS (start) ---------------- -->
+    <section class="services section" id="projects">
+      <h2 class="section_title">Projects</h2>
+      <span class="section_subtitle">My work</span>
+
+      <div class="services_container container grid">
+        <!-- SKILLS 1 -->
+        <div class="services_content">
+          <div>
+            <i class="uil uil-web-grid services_icon"></i>
+            <h3 class="services_title">
+              Web <br />
+              Development
+            </h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services_button">
+            View More
+            <i class="uil uil-caret-right button_icon"></i>
+          </span>
+
+          <div class="services_modal">
+            <div class="services_modal-content">
+              <h4 class="services_modal-title">
+                Web <br />
+                Development
+              </h4>
+              <i class="uil uil-times services_modal-close"></i>
+
+              <ul class="services_modal-services grid">
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop the user interface</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Web Page development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Android app development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop apps</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- SKILLS 2 -->
+        <div class="services_content">
+          <div>
+            <i class="uil uil-arrow services_icon"></i>
+            <h3 class="services_title">
+              Android <br />
+              Development
+            </h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services_button">
+            View More
+            <i class="uil uil-caret-right button_icon"></i>
+          </span>
+
+          <div class="services_modal">
+            <div class="services_modal-content">
+              <h4 class="services_modal-title">
+                Android <br />
+                Development
+              </h4>
+              <i class="uil uil-times services_modal-close"></i>
+
+              <ul class="services_modal-services grid">
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop the user interface</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Web Page development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Android app development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop apps</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- SKILLS 5 -->
+        <div class="services_content">
+          <div>
+            <i class="uil uil-pen services_icon"></i>
+            <h3 class="services_title">
+              Java <br />
+              Projects
+            </h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services_button">
+            View More
+            <i class="uil uil-caret-right button_icon"></i>
+          </span>
+
+          <div class="services_modal">
+            <div class="services_modal-content">
+              <h4 class="services_modal-title">
+                Data <br />
+                Streaming
+              </h4>
+              <i class="uil uil-times services_modal-close"></i>
+
+              <ul class="services_modal-services grid">
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop the user interface</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Web Page development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>Android app development</p>
+                </li>
+                <li class="services_modal-service">
+                  <i class="uil uil-check-circle services_modal-icon"></i>
+                  <p>I develop apps</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------- MAIN >> SKILLS (end) ---------------- -->
+
+    <!-- CONTACT ME -->
+    <section class="contact section" id="contact">
+      <h2 class="section_title">Contact Me</h2>
+      <span class="section_subtitle">Get in touch</span>
+      <div class="contact_container container grid">
+        <div>
+          <div class="contact_information">
+            <i class="uil uil-phone contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Call Me</h3>
+              <span class="contact_subtitle">+91-8080548252</span>
+            </div>
+          </div>
+
+          <div class="contact_information">
+            <i class="uil uil-envelope-alt contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Email</h3>
+              <span class="contact_subtitle">garjegaurav2000@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact_information">
+            <i class="uil uil-map-marker contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Location</h3>
+              <span class="contact_subtitle">Pune-India</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact_form grid">
+          <div class="contact_inputs grid">
+            <div class="contact_content">
+              <label for="" class="contact_label">NAME</label>
+              <input type="text" name="fullName" class="contact_input" minlength="3" maxlength="50"
+                placeholder="your full name" required />
+            </div>
+            <div class="contact_content">
+              <label for="" class="contact_label">EMAIL</label>
+              <input type="email" name="eMail" class="contact_input" minlength="6" maxlength="30"
+                pattern=".+@example\.com" placeholder="gaurav@example.com" required />
+            </div>
+          </div>
+          <div class="contact_content">
+            <label for="" class="contact_label">SUBJECT</label>
+            <input type="text" name="subject" class="contact_input" placeholder="what you want to talk about?"
+              required />
+          </div>
+          <div class="contact_content">
+            <label for="" class="contact_label">MESSAGE</label>
+            <textarea name="message" cols="0" rows="7" class="contact_input" placeholder="description"></textarea>
+          </div>
+
+          <div>
+            <a href="#" class="button button--flex">
+              Send Message
+              <i class="uil uil-message button_icon"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- ---------------- MAIN (start) ---------------- -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer_bg">
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">GAURAV GARJE</h1>
+          <span class="footer_subtitle">Computer Engineer</span>
+        </div>
+
+        <ul class="footer_links">
+          <li>
+            <a href="#services" class="footer_link">Services</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer_link">Contact Me</a>
+          </li>
+          <li>
+            <a href="#services" class="footer_link">Services</a>
+          </li>
+        </ul>
+        <div class="footer_socials">
+          <a href="https://www.facebook.com/gaurav.garje.21/" target="_blank" class="footer_social">
+            <i class="uil uil-facebook" title="Facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/gaurav.garje.21/" target="_blank" class="footer_social">
+            <i class="uil uil-instagram-alt" title="Instagram"></i>
+          </a>
+          <a href="https://twitter.com/gauravgarje21" target="_blank" class="footer_social">
+            <i class="uil uil-twitter" title="Twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer_copy">&#169; Gaurav Garje | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <a href="#home" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup_icon"></i>
+  </a>
+
+  <script>
+
+    // Function to observe when the "About Me" section comes into view
+    function observeAboutSection() {
+      const aboutSection = document.getElementById('about');
+
+      // Create the observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // When the about section is in view, calculate experience
+            calculateExperience();
+
+            // Stop observing once the calculation is done
+            observer.unobserve(aboutSection);
+          }
+        });
+      }, { threshold: 0.5 });  // Trigger when 50% of the section is in view
+
+      // Start observing the "About Me" section
+      observer.observe(aboutSection);
+    }
+
+    // Call the observer when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', observeAboutSection);
+
+    function calculateExperience() {
+
+      const startDate = new Date(2022, 1); // Example: February 2020 (Note: month is 0-indexed, so 1 means February)
+
+      // Get the current date
+      const currentDate = new Date();
+
+      // Calculate the total number of months of experience
+      let totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+      totalMonths += currentDate.getMonth() - startDate.getMonth();
+      document.getElementById('monthsElapsed').setAttribute("data-val", totalMonths);
+
+      let valueDisplays = document.querySelectorAll(".num");
+      let interval = 3000;
+
+      valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+          startValue += 1;
+          valueDisplay.textContent = startValue;
+          if (startValue == endValue) {
+            clearInterval(counter);
+          }
+        }, duration);
+      });
+    };
+
+    const text = document.querySelector(".second-text");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Computer Engineer";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "Java Programmer";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = " Website Developer";
+      }, 8000);
+      setTimeout(() => {
+        text.textContent = "Android Developer";
+      }, 12000);
+    };
+
+    textLoad();
+
+    setInterval(textLoad, 12000);
+  </script>
+</body>
+
+<!-- for PRELOADER -->
+<!-- jquery version 1.12.4 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+  integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- jquery migration 1.4.1 -->
   <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
 
-  <!-- jquery version 3.0.0 -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
-    integrity="sha512-lzilC+JFd6YV8+vQRNRtU7DOqv5Sa9Ek53lXt/k91HZTJpytHS1L6l1mMKR9K6VVoDt4LiEXaa6XBrYk1YhGTQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+<!-- jquery version 3.0.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+  integrity="sha512-lzilC+JFd6YV8+vQRNRtU7DOqv5Sa9Ek53lXt/k91HZTJpytHS1L6l1mMKR9K6VVoDt4LiEXaa6XBrYk1YhGTQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- jquery migration 3.3.2 -->
   <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
 
-  <!-- jquery version 3.6.0 -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+<!-- jquery version 3.6.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </html>

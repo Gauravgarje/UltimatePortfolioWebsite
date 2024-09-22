@@ -1,10 +1,9 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* CUSTOM GLOSS AND BLOOM FONT */
 @font-face {
     font-family: 'GlossAndBloom';
-    src: url(/UltimatePortfolioWebsite/Fonts/Gloss_And_Bloom.ttf);
+    src: url(../Fonts/Gloss_And_Bloom.ttf);
 }
 
 body {
@@ -35,7 +34,7 @@ body {
 .preloader_text {
     width: 100%;
     height: 100vh;
-    background-image: url(/UltimatePortfolioWebsite/Images/preloader_background.jpg);
+    background-image: url(../Images/preloader_background.jpeg);
     background-size: 100% 100%;
     background-position: center;
     font-family: 'GlossAndBloom', sans-serif;
@@ -55,47 +54,47 @@ body {
 
 @keyframes anim1 {
     0% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background1.jpg);
+        background-image: url(../Images/preloader_background.jpeg);
     }
 
     10% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background2.jpg);
+        background-image: url(../Images/preloader_background1.jpeg);
     }
 
     20% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background3.png);
+        background-image: url(../Images/preloader_background2.jpeg);
     }
 
     30% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background4.png);
+        background-image: url(../Images/preloader_background3.jpeg);
     }
 
     40% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background5.jpg);
+        background-image: url(../Images/preloader_background4.jpeg);
     }
 
     50% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background6.png);
+        background-image: url(../Images/preloader_background5.jpeg);
     }
 
     60% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background7.jpg);
+        background-image: url(../Images/preloader_background6.jpeg);
     }
 
     70% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background8.png);
+        background-image: url(../Images/preloader_background7.jpeg);
     }
 
     80% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background9.png);
+        background-image: url(../Images/preloader_background8.jpeg);
     }
 
     90% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background10.png);
+        background-image: url(../Images/preloader_background9.jpeg);
     }
 
     100% {
-        background-image: url(/UltimatePortfolioWebsite/Images/preloader_background11.jpg);
+        background-image: url(../Images/preloader_background10.jpeg);
     }
 }
 
@@ -159,8 +158,10 @@ body {
 
     /* ** Colors ** */
     /* Change favorite color */
-    --hue-color-light: 250;    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-    --hue-color-dark: 100;    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color-light: 250;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color-dark: 100;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color-light), 69%, 61%);
@@ -492,19 +493,19 @@ img {
     overflow: hidden;
 }
 
-.home_subtitle .text{
+.home_subtitle .text {
     position: relative;
     color: var(--text-color);
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
-.home_subtitle .text.first-text{
+.home_subtitle .text.first-text {
     color: var(--text-color);
 }
 
-.text.second-text:before{
-    content:"";
+.text.second-text:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -515,11 +516,14 @@ img {
     animation: animate 4s steps(12) infinite;
 }
 
-@keyframes animate{
-    40%, 60%{
+@keyframes animate {
+
+    40%,
+    60% {
         left: calc(100% + 4px);
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
@@ -650,135 +654,37 @@ img {
 }
 
 /*==================== SKILLS ====================*/
-.skills_container {
-    row-gap: 0;
-
+.skills__img{
+    width: 55px;
+    margin-bottom: .5rem;
 }
 
-.skills_header {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--mb-2-5);
-    cursor: pointer;
-}
-
-.skills_icon,
-.skills_arrow {
-    font-size: 2rem;
-    color: var(--first-color);
-}
-
-.skills_icon {
-    margin-right: var(--mb-0-75);
-}
-
-.skills_title {
-    font-size: var(--h3-font-size);
-}
-
-.skills_subtitle {
+.skills__name{
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
 }
 
-.skills_arrow {
-    margin-left: auto;
-    transition: 0.4s;
+.skills__content{
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-.skills_list {
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
+.skills__box{
+    display: grid;
+    place-items: center;
+    transition: transform .4s;
 }
 
-.skills_titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
-}
-
-.skills_name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-}
-
-.skill_bar,
-.skills_percentage {
-    height: 5px;
-    border-radius: 0.25rem;
-}
-
-.skills_bar {
-    background-color: var(--first-color-lighter);
-}
-
-.skills_percentage {
-    display: block;
-    background-color: var(--first-color);
-}
-
-.skills_html {
-    width: 90%;
-}
-
-.skills_css {
-    width: 80%;
-}
-
-.skills_js {
-    width: 50%;
-}
-
-.skills_react {
-    width: 25%;
-}
-
-.skills_php {
-    width: 25%;
-}
-
-.skills_node {
-    width: 10%;
-}
-
-.skills_firebase {
-    width: 50%;
-}
-
-.skills_python {
-    width: 60%;
-}
-
-.skills_figma {
-    width: 10%;
-}
-
-.skills_sketch {
-    width: 15%;
-}
-
-.skills_photoshop {
-    width: 85%;
-}
-
-.skills_close .skills_list {
-    height: 0;
-    overflow: hidden;
-    transition: 0.6s;
-}
-
-.skills_open .skills_list {
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-    transition: 0.6s;
-}
-
-.skills_open .skills_arrow {
-    transform: rotate(-180deg);
-    transition: 0.6s;
+.skills__box:hover{
+    transform: translateY(-.25rem);
 }
 
 /*==================== QUALIFICATION ====================*/
+.qualification__img{
+    height: 65px;
+    margin-bottom: .5rem;
+}
+
 .qualification_tabs {
     display: flex;
     justify-content: space-evenly;
